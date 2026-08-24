@@ -1,0 +1,10 @@
+so_a = 15
+so_b = 7
+tong = so_a + so_b
+hieu = so_a - so_b
+tich = so_a * so_b
+thuong = so_a / so_b
+print("Tổng =", tong)
+print("Hiệu =", hieu)
+print("tích =", tich)
+print("Thương =", thuong)
