@@ -1,0 +1,10 @@
+print("===== LÀM VIỆC VỚI CHUÔI =====")
+ho_ten = input("Nhập họ  và tên đầy đủ của bạn: ")
+print("\nKết quả xử lý:")
+print("Họ tên gốc     :", ho_ten)
+print("Viết hoa toàn bộ :", ho_ten.upper())
+print("Viết thường      :", ho_ten.lower())
+print("Độ dài chuỗi     :", len(ho_ten), "ký tự")
+# Tách lấy tên (phần cuối cùng)
+ten = ho_ten.split()[-1]
+print("Tên của bạn      :", ten)
