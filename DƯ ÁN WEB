@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Ty TNHH TM DV DIỆU KỲ - Camera An Ninh & Đèn Năng Lượng Mặt Trời</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f6f9;
+        }
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo h1 {
+            font-size: 1.3rem;
+            color: #ffeb3b;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://picsum.photos/1200/400') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .btn-call {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #0d47a1;
+            border-bottom: 2px solid #0d47a1;
+            padding-bottom: 8px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+        /* Admin Management Box */
+        .admin-box {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .admin-box h3 {
+            margin-bottom: 15px;
+            color: #1565c0;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #1565c0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0d47a1;
+            color: white;
+        }
+        footer {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .hotline-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>TNHH TM DV DIỆU KỲ</h1>
+            </div>
+            <nav>
+                <a href="#san-pham">Sản Phẩm</a>
+                <a href="#bai-dang">Bài Đăng</a>
+                <a href="#lien-he">Liên Hệ</a>
+                <a href="#quan-ly">Quản Lý Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>TƯ VẤN & LẮP ĐẶT CAMERA AN NINH - ĐÈN NĂNG LƯỢNG MẶT TRỜI</h2>
+        <p>Uy tín hàng đầu khu vực Sóc Trăng, Cần Thơ | Người đại diện: <strong>DIỆU KỲ</strong></p>
+        <a href="tel:0765930333" class="btn-call">GỌI NGAY: 0765 930 333</a>
+    </section>
+
+    <!-- Danh sách Sản Phẩm -->
+    <div class="container" id="san-pham">
+        <h2 class="section-title">DANH MỤC SẢN PHẨM & DỊCH VỤ</h2>
+        <div class="grid" id="product-list">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=1" alt="Camera">
+                <h3>Camera Wifi Xoay 360 Cần Thơ - Sóc Trăng</h3>
+                <p class="price">850.000 VNĐ</p>
+                <p>Giám sát ban đêm có màu, đàm thoại 2 chiều, kết nối điện thoại.</p>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=2" alt="Đèn">
+                <h3>Đèn Năng Lượng Mặt Trời 300W</h3>
+                <p class="price">1.250.000 VNĐ</p>
+                <p>Chống nước IP67, chiếu sáng liên tục 12h, bảo hành chính hãng.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Danh sách Bài Đăng -->
+    <div class="container" id="bai-dang">
+        <h2 class="section-title">BÀI ĐĂNG & MẸO KỸ THUẬT</h2>
+        <div class="grid" id="post-list">
+            <div class="card">
+                <h3>Giải pháp lắp camera an ninh cho nhà xưởng tại Sóc Trăng</h3>
+                <p>Kinh nghiệm chọn vị trí quan sát bao quát và đi dây nguồn thẩm mỹ...</p>
+            </div>
+            <div class="card">
+                <h3>Lợi ích của đèn năng lượng mặt trời mùa mưa tại Cần Thơ</h3>
+                <p>Tấm pin nạp siêu nhanh ngay cả khi trời nhiều mây và tiết kiệm 100% tiền điện...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thông tin liên hệ & Đăng ký -->
+    <div class="container" id="lien-he">
+        <h2 class="section-title">LIÊN HỆ & HỖ TRỢ KHÁCH HÀNG</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>CÔNG TY TNHH TM DV DIỆU KỲ</h3>
+                <p><strong>Người liên hệ:</strong> DIỆU KỲ</p>
+                <p><strong>Hotline/Zalo:</strong> <a href="tel:0765930333">0765 930 333</a></p>
+                <p><strong>Khu vực dịch vụ:</strong> Sóc Trăng, Cần Thơ và lân cận</p>
+                <br>
+                <h3>Giờ Mở Cửa</h3>
+                <p><strong>Thứ 2 - Chủ Nhật:</strong> 07:30 - 18:30</p>
+            </div>
+
+            <div class="card">
+                <h3>Gửi Y Cầu Tư Vấn</h3>
+                <form id="customer-form" onsubmit="addCustomer(event)">
+                    <input type="text" id="cust-name" placeholder="Họ và tên khách hàng" required>
+                    <input type="tel" id="cust-phone" placeholder="Số điện thoại" required>
+                    <input type="text" id="cust-address" placeholder="Địa chỉ (Sóc Trăng / Cần Thơ)">
+                    <textarea id="cust-note" rows="3" placeholder="Nhu cầu lắp đặt (Camera / Đèn NLMT...)"></textarea>
+                    <button type="submit">Gửi Y Cầu Hỗ Trợ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- KHU VỰC QUẢN TRỊ (ĐĂNG BÀI - CẬP NHẬT SẢN PHẨM - XEM KHÁCH HÀNG) -->
+    <div class="container" id="quan-ly">
+        <h2 class="section-title">KHU VỰC QUẢN TRỊ DÀNH CHO ADMIN</h2>
+        
+        <!-- 1. Đăng sản phẩm mới -->
+        <div class="admin-box">
+            <h3>1. Cập Nhật Thông Tin Sản Phẩm Mới</h3>
+            <form onsubmit="addProduct(event)">
+                <input type="text" id="prod-title" placeholder="Tên sản phẩm" required>
+                <input type="text" id="prod-price" placeholder="Giá bán (VD: 950.000 VNĐ)" required>
+                <textarea id="prod-desc" rows="2" placeholder="Mô tả sản phẩm"></textarea>
+                <button type="submit">Thêm Sản Phẩm Mới</button>
+            </form>
+        </div>
+
+        <!-- 2. Đăng bài viết mới -->
+        <div class="admin-box">
+            <h3>2. Đăng Bài Viết Mới</h3>
+            <form onsubmit="addPost(event)">
+                <input type="text" id="post-title" placeholder="Tiêu đề bài viết" required>
+                <textarea id="post-content" rows="3" placeholder="Nội dung bài viết..." required></textarea>
+                <button type="submit">Đăng Bài Viết</button>
+            </form>
+        </div>
+
+        <!-- 3. Quản lý danh sách khách hàng -->
+        <div class="admin-box">
+            <h3>3. Danh Sách Khách Hàng Cần Tư Vấn</h3>
+            <div style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Họ & Tên</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Địa Chỉ</th>
+                            <th>Nhu Cầu</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customer-table-body">
+                        <tr>
+                            <td>Nguyen Van A</td>
+                            <td>0912345678</td>
+                            <td>Sóc Trăng</td>
+                            <td>Cần tư vấn 2 camera outdoor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <a href="tel:0765930333" class="hotline-float">📞 Gọi DIỆU KỲ: 0765 930 333</a>
+
+    <footer>
+        <p>&copy; 2026 CÔNG TY TNHH TM DV DIỆU KỲ. Người đại diện: DIỆU KỲ.</p>
+    </footer>
+
+    <!-- XỬ LÝ DỮ LIỆU BẰNG JAVASCRIPT -->
+    <script>
+        // Xử lý Thêm Sản Phẩm Mới
+        function addProduct(e) {
+            e.preventDefault();
+            const title = document.getElementById('prod-title').value;
+            const price = document.getElementById('prod-price').value;
+            const desc = document.getElementById('prod-desc').value;
+
+            const productList = document.getElementById('product-list');
+            const newCard = document.createElement('div');
+            newCard.className = 'card';
+            newCard.innerHTML = `
+                <img src="https://picsum.photos/300/200?random=${Math.floor(Math.random()*100)}" alt="${title}">
+                <h3>${title}</h3>
+                <p class="price">${price}</p>
+                <p>${desc}</p>
+            `;
+            productList.prepend(newCard);
+            alert('Thêm sản phẩm thành công!');
+            e.target.reset();
+        }
+
+        // Xử lý Đăng Bài Viết Mới
+        function addPost(e) {
+            e.preventDefault();
+            const title = document.getElementById('post-title').value;
+            const content = document.getElementById('post-content').value;
+
+            const postList = document.getElementById('post-list');
+            const newCard = document.createElement('div');
+            newCard.className = 'card';
+            newCard.innerHTML = `
+                <h3>${title}</h3>
+                <p>${content}</p>
+            `;
+            postList.prepend(newCard);
+            alert('Đăng bài viết thành công!');
+            e.target.reset();
+        }
+
+        // Xử lý Cập Nhật Khách Hàng Đăng Ký
+        function addCustomer(e) {
+            e.preventDefault();
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+            const address = document.getElementById('cust-address').value;
+            const note = document.getElementById('cust-note').value;
+
+            const tbody = document.getElementById('customer-table-body');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${name}</td>
+                <td>${phone}</td>
+                <td>${address}</td>
+                <td>${note}</td>
+            `;
+            tbody.prepend(newRow);
+            alert('Cảm ơn bạn! Thông tin đã được gửi đến Công ty TNHH TM DV DIỆU KỲ.');
+            e.target.reset();
+        }
+    </script>
+
+</body>
+</html>
